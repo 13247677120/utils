@@ -6,7 +6,6 @@ import java.util.List;
 import com.akuma.mybatis.Generater.Table;
 
 public class Test {
-
 	public static void main(String[] args) {
 		Generater.setProjectFile("F:/Users/Administrator/workspace/mybatisGenerater");
 		Generater.setJdbcConnection("jdbc:mysql://localhost:3306/ibuy?useSSL=false", "com.mysql.jdbc.Driver", "root",
@@ -18,5 +17,4 @@ public class Test {
 		Generater.generate("com.kunter.ibuy.admin.eo", "com.kunter.ibuy.admin.xml", "com.kunter.ibuy.admin.dao",
 				tables);
 	}
-
 }
