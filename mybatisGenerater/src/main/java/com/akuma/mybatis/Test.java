@@ -16,4 +16,5 @@ public class Test {
 
 		Generater.generate("com.kunter.ibuy.admin.eo", "com.kunter.ibuy.admin.xml", "com.kunter.ibuy.admin.dao", tables);
 	}
+	
 }
