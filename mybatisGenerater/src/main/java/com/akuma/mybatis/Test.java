@@ -7,7 +7,7 @@ import com.akuma.mybatis.Generater.Table;
 
 public class Test {
 	public static void main(String[] args) {
-		Generater.setProjectFile("F:/Users/Administrator/workspace/mybatisGenerater");
+		Generater.setProjectFile("C:/Users/AiHuanGou/git/utils/mybatisGenerater");
 		Generater.setJdbcConnection("jdbc:mysql://localhost:3306/ibuy?useSSL=false", "com.mysql.jdbc.Driver", "root",
 				"888888");
 
