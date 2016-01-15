@@ -8,11 +8,15 @@ import java.io.File;
 import javax.imageio.ImageIO;
 
 public class Test {
-	public static void main(String argv[]) {
+	public static void main(String[] args) {
+		Test.getImage("C:/Users/AiHuanGou/Desktop/psb.jpg", "C:/Users/AiHuanGou/Desktop/psbs.jpg", 10);
+	}
+
+	public static void getImage(String file, String toFile, int size) {
 		try {
-			File fi = new File("C:/Users/AiHuanGou/Desktop/psb.jpg"); // 大图文件
-			File fo = new File("C:/Users/AiHuanGou/Desktop/psbs.jpg"); // 将要转换出的小图文件
-			int nw = 500;
+			File fi = new File(file); // 大图文件
+			File fo = new File(toFile); // 将要转换出的小图文件
+			int nw = size;
 			/*
 			 * AffineTransform 类表示 2D 仿射变换，它执行从 2D 坐标到其他 2D
 			 * 坐标的线性映射，保留了线的“直线性”和“平行性”。可以使用一系 列平移、缩放、翻转、旋转和剪切来构造仿射变换。
@@ -27,7 +31,6 @@ public class Test {
 			double sy = (double) nh / h;
 			transform.setToScale(sx, sy); // setToScale(double sx, double sy)
 											// 将此变换设置为缩放变换。
-			System.out.println(w + " " + h);
 			/*
 			 * AffineTransformOp类使用仿射转换来执行从源图像或 Raster 中 2D 坐标到目标图像或 Raster 中 2D
 			 * 坐标的线性映射。所使用的插值类型由构造方法通过 一个 RenderingHints 对象或通过此类中定义的整数插值类型之一来指定。
