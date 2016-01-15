@@ -16,7 +16,7 @@ public class Test {
 		try {
 			File fi = new File(file); // 大图文件
 			File fo = new File(toFile); // 将要转换出的小图文件
-			int nw = size;
+			int nw =   size;
 			/*
 			 * AffineTransform 类表示 2D 仿射变换，它执行从 2D 坐标到其他 2D
 			 * 坐标的线性映射，保留了线的“直线性”和“平行性”。可以使用一系 列平移、缩放、翻转、旋转和剪切来构造仿射变换。
