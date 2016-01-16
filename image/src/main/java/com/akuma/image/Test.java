@@ -27,7 +27,7 @@ public class Test {
 			int h = bis.getHeight();
 			// double scale = (double)w/h;
 			int nh = (nw * h) / w;
-			double sx = (double) nw / w;
+			double sx =   (double) nw / w;
 			double sy = (double) nh / h;
 			transform.setToScale(sx, sy); // setToScale(double sx, double sy)
 											// 将此变换设置为缩放变换。
